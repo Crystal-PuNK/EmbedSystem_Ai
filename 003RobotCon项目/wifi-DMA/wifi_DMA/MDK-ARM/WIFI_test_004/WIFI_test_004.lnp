@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wifi_test_004\startup_stm32f103xe.o"
+"wifi_test_004\main.o"
+"wifi_test_004\gpio.o"
+"wifi_test_004\dma.o"
+"wifi_test_004\usart.o"
+"wifi_test_004\stm32f1xx_it.o"
+"wifi_test_004\stm32f1xx_hal_msp.o"
+"wifi_test_004\stm32f1xx_hal_gpio_ex.o"
+"wifi_test_004\stm32f1xx_hal_tim.o"
+"wifi_test_004\stm32f1xx_hal_tim_ex.o"
+"wifi_test_004\stm32f1xx_hal_uart.o"
+"wifi_test_004\stm32f1xx_hal.o"
+"wifi_test_004\stm32f1xx_hal_rcc.o"
+"wifi_test_004\stm32f1xx_hal_rcc_ex.o"
+"wifi_test_004\stm32f1xx_hal_gpio.o"
+"wifi_test_004\stm32f1xx_hal_dma.o"
+"wifi_test_004\stm32f1xx_hal_cortex.o"
+"wifi_test_004\stm32f1xx_hal_pwr.o"
+"wifi_test_004\stm32f1xx_hal_flash.o"
+"wifi_test_004\stm32f1xx_hal_flash_ex.o"
+"wifi_test_004\stm32f1xx_hal_exti.o"
+"wifi_test_004\system_stm32f1xx.o"
+--strict --scatter "WIFI_test_004\WIFI_test_004.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WIFI_test_004.map" -o WIFI_test_004\WIFI_test_004.axf
